@@ -2,11 +2,249 @@
   box-sizing: border-box;
 }
 
-body{
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #b9c1c4;
   margin: 0;
   padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-  background: #f7f5f0;
 }
+
+header {
+  text-align: center;
+  background-image: url(images/new-york-explorer-pass.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 50px;
+  overflow: hidden;
+  line-height: 1.5;
+  max-width: 100%;
+}
+
+h1 {
+  text-shadow: 5px 8px 10px #222;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: purple;
+}
+
+li {
+  display: inline;
+}
+
+.main-nav {
+  width: 100%;
+  background: #333;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  font-weight: 800px;
+  margin: auto;
+}
+
+.nav .name {
+  display: inline;
+  margin-right: auto;
+  color: rgb(250, 248, 248);
+  font-size: 18px;
+}
+
+.nav li {
+  display: inline;
+  padding-left: 15px;
+}
+
+.nav a {
+  color: rgb(250, 248, 248);
+  font-size: 18px;
+  padding-right: 15px;
+}
+
+.nav a:hover {
+  color: red;
+}
+
+.nav a:active {
+  color: purple;
+}
+
+.profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tag {
+  background-color: white;
+  padding: 15px;
+  margin: 15px auto;
+  border-radius: 6px;
+  display: table;
+}
+
+.location {
+  background-color: rgb(56, 31, 31);
+  color: #b9c1c4;
+}
+
+/* .container {
+  width: 80%;
+  margin: auto;
+} */
+
+.card p {
+  text-align: left;
+}
+
+.card h2 {
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  float: left;
+}
+
+.card:hover {
+  border-color: lightblue;
+}
+
+ul.skills{
+  padding: 0;
+  text-align: center;
+}
+
+.skills li{
+  display: inline-block;
+  border-radius: 6px;
+  background: coral;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: rgb(106, 106, 248);
+}
+/* float clearfix */
+.group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.footer {
+  margin: auto;
+}
+
+.main-footer {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+}
+
+.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+
+.github {
+  background-image: url(images/github.svg);
+}
+
+.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 0.4;
+  transition: all 0.5s;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .flex {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  /* footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  } */
+
+}
+
